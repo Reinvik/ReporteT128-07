@@ -1,11 +1,9 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Delivery } from './types';
 import Header from './components/Header';
 import DeliveryForm from './components/DeliveryForm';
 import DeliveryTable from './components/DeliveryTable';
 import Card from './components/ui/Card';
-import { CIAL_LOGO_BASE64 } from './constants';
 
 type View = 'form' | 'table';
 
@@ -19,12 +17,6 @@ const App: React.FC = () => {
       if (storedDeliveries) {
         setDeliveries(JSON.parse(storedDeliveries));
       }
-
-      const favicon = document.getElementById('favicon') as HTMLLinkElement | null;
-      if (favicon) {
-        favicon.href = CIAL_LOGO_BASE64;
-      }
-
     } catch (error) {
       console.error("Failed to load deliveries from local storage:", error);
     }

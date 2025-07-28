@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { CIAL_LOGO_BASE64 } from '../constants';
 
 interface HeaderProps {
     currentView: 'form' | 'table';
@@ -15,8 +13,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
     return (
         <header className="bg-white shadow-md sticky top-0 z-10">
             <nav className="max-w-4xl mx-auto p-4 flex justify-between items-center">
-                <div className="flex items-center gap-3">
-                    <img src={CIAL_LOGO_BASE64} alt="CiAL Logo" className="w-10 h-10 object-contain"/>
+                <div className="flex items-center">
                     <h1 className="text-xl sm:text-2xl font-bold text-gray-800">Reporte T1</h1>
                 </div>
                 <div className="flex gap-2">
