@@ -1,0 +1,6 @@
+{
+  "name": "Verificador de Entregas",
+  "description": "Una aplicación web para registrar y verificar entregas de mercancía desde Santiago a diferentes zonales, con análisis inteligente de cada registro.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
